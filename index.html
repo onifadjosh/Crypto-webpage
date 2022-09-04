@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
     <link href="dist/output.css" rel="stylesheet">
     <title>CRAPPO - your crypto platform</title>
 </head>
 <body>
     <header class="bg-primcol text-white px-20 h-screen">
-        <nav class="flex  justify-between ">
+        <nav class="flex  justify-between pt-5">
             
             <!-- nav logo -->
             <div class="flex items-center">
@@ -17,39 +20,39 @@
                 <h1>CRAPPO</h1>
             </div>
 
-            <ul class="flex basis-3/4 gap-5 justify-end items-center">
-                <li><a href="#"></a>Products</li>
-                <li><a href="#"></a>Features</li>
-                <li><a href="#"></a>About</li>
-                <li><a href="#"></a>Contact</li>
-                <li class="border-r pr-1"><a href="#"></a>Log In</li>
-                <li><a href="#"></a>|</li>
-                <a href="#">Register</a>
+            <ul class="flex basis-3/4 gap-5 justify-end items-center text-xs md:text-sm">
+                <li class="hover:text-seccol"><a href="#" ></a>Products</li>
+                <li class="hover:text-seccol"><a href="#"></a>Features</li>
+                <li class="hover:text-seccol"><a href="#"></a>About</li>
+                <li class="hover:text-seccol"><a href="#"></a>Contact</li>
+                <li class="hover:text-seccol"><a href="#"></a>Log In</li>
+                <li>|</li>
+                <a href="#" class="primbutton">Register</a>
             </ul>
         </nav>
 
         <div class="flex justify-between flex-wrap items-center">
             <div>
-                <div class="flex  gap-1 bg-faded-white  rounded-xl">
-                    <a class="bg-white rounded-xl text-primcol px-3" href="#">75% save</a>
-                    <p>For the Black Friday weekend</p>
+                <div class="flex items-center gap-2 bg-faded-white text-xs lg:text-sm py-1 w-3/4 rounded-2xl">
+                    <a class="bg-white rounded-xl text-xs lg:text-sm text-primcol px-3 py-1 font-semibold" href="#">75% save</a>
+                    <p class="text-xs lg:text-sm">For the Black Friday weekend</p>
                 </div>
-                <h1>
+                <h1 class="text-lg font-semibold lg:text-5xl lg:font-black py-5">
                     Fastest & secure <br>
                     platform to invest <br>
                     in crypto
                 </h1>
-                <p>
+                <p class="text-xs lg:textsm text-[#E0E0E0] py-4 mb-3">
                     Buy and sell cryptocurrencies, trusted by 10M wallets <br>
                     with over $30 billion in transactions.
                 </p>
         
-                <a href="#">Try for FREE</a>
+                <a href="#" class="primbutton text-xs lg:text-sm">Try for FREE</a>
             </div>
 
             <div class="relative ">
                 <img src="/images/Illustration1.png" alt="" srcset="">
-                <div class=" image-extension  bg-faded-white top-2/4 absolute  "></div>
+                <div class=" image-extension  bg-faded-white top-2/4 absolute z-30 "></div>
                 <div class=" image-extension2  bg-faded-white top-2/4 absolute  "></div>
             </div>
 
@@ -59,7 +62,7 @@
         
     </header>
 
-    <section class="bg-primcol  text-white px-20">
+    <section class="bg-primcol  text-white px-20 relative">
         <div class="flex justify-around">
             <div>
                 <div>
@@ -86,87 +89,99 @@
         <div class="flex items-center">
             <img src="/images/Illustration2.png" alt="" srcset="">
             <div>
-                <h1>Why you should choose CRAPPO</h1>
-                <p>
+                <h1 class="text-lg font-semibold">Why you should choose CRAPPO</h1>
+                <p class="text-xs">
                     Experience the next generation cryptocurrency <br>
                     platform. No financial borders, extra fees, and fake <br>
                     reviews.
                 </p>
-                <a href="#">Learn More</a>
+                <a href="#" class="text-xs bg-seccol px-5 py-3 rounded-3xl ">Learn More</a>
             </div>
         </div>
 
-        <div>
-            <h1>
+        <div class="text-center pb-10">
+            <h1 class="text-lg font-semibold">
                 Check how much you can earn
             </h1>
-            <p>
+            <p class="text-xs pb-10">
                 Let’s check your hash rate to see how much you will earn today, <br>
                 Exercitation veniam consequat sunt nostrud amet.
             </p>
         </div>
 
-        <div>
-            <div>
-                <input type="text" name="" id="">
-                inp
+        <div class="text-black bg-white w-1/2 flex justify-center  flex-col px-4 py-4 absolute top-[90%] left-[25%] mt-5 rounded-xl ">
+            <div class="flex justify-between items-center">
+                <input type="text" name="" id="" placeholder="Enter your hash rate">
+                <select name="" aria-placeholder="TH/s" class="text-black">
+                    <option value="">BTC</option>
+                    <option value="">ETH</option>
+                    <option value="" selected>TH/s</option>
+                    <option value="">LTC</option>
+                </select>
 
-                <input type="button" value="submit">
+                <input type="button" value="Calculate">
             </div>
 
-            <h2>ESTIMATED 24 HOUR REVENUE</h2>
+            <div>
+                <h3 class="text-xs font-bold text-seccol">ESTIMATED 24 HOUR REVENUE</h3>
 
-            <h1>
-                0.055 130 59 ETH <span>($1275)</span>
-            </h1>
+                <h1 class="font-bold text-lg">
+                    0.055 130 59 ETH <span class="text-seccol ">($1275)</span>
+                </h1>
 
-            <p>Revenue will change based on mining difficulty and Ethereum price.</p>
+                <p class="text-xs text-gray-400">Revenue will change based on mining difficulty and Ethereum price.</p>
+            </div>
 
 
         </div>
 
     </section>
 
-    <section>
-        <h1>Trade securely and market the high growth cryptocurrencies.</h1>
+    <section class="mt-10 h-1/2-screen px-20 ">
+        <div class="flex justify-center items-center flex-col h-full">
+
+            <h1 class="text-md ">Trade securely and market the high growth cryptocurrencies.</h1>
 
 
-        <div>
-            <div>
-                <img src="" alt="" srcset="">
-                <h1>Bitcoin<span>BTC</span></h1>
-                <p>Digital currency in which a record of <br>
-                    transactions is maintained.
-                </p>
-                <a href="">Start mining</a>
-            </div>
+            <div class="flex justify-around w-full">
+                <div class="bg-tetcol flex flex-col items-center justify-center text-white text-xs">
+                    <img src="images/bitcoin-icon.png" class=" max-w-[20%] " alt="" srcset="">
+                    <h1>Bitcoin<span>BTC</span></h1>
+                    <p>Digital currency in which a record of <br>
+                        transactions is maintained.
+                    </p>
+                    <a href="">Start mining</a>
+                </div>
 
-            <div>
-                <img src="" alt="" srcset="">
-                <h1>Ethereum<span>ETH</span></h1>
-                <p>Blockchain technology to create and run <br>
-                    decentralized digital applications.
-                </p>
-                <a href=""></a>
-            </div>
+                <div class="text-primcol flex flex-col items-center justify-center text-xs">
+                    <img src="images/ETH-icon.png" class=" max-w-[20%]" alt="" srcset="">
+                    <h1>Ethereum<span>ETH</span></h1>
+                    <p>Blockchain technology to create and run <br>
+                        decentralized digital applications.
+                    </p>
+                    <a href=""></a>
+                </div>
 
-            <div>
-                <img src="" alt="" srcset="">
-                <h1>Litecoin<span>LTC</span></h1>
-                <p>Cryptocurrency that enables instant <br>
-                    payments to anyone in the world.
-                </p>
-                <a href=""></a>
+                <div class="text-primcol flex flex-col items-center justify-center text-xs">
+                    <img src="images/LTC-Icon.png" class=" max-w-[20%]" alt="" srcset="">
+                    <h1>Litecoin<span>LTC</span></h1>
+                    <p>Cryptocurrency that enables instant <br>
+                        payments to anyone in the world.
+                    </p>
+                    <a href=""></a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div>
-            <h1>Market sentiments, portfolio, and run <br>
-                the infrastructure of your choice
-            </h1>
+    <section class="bg-tetcol text-white  px-20 ">
 
+        <h1 class="text-center">Market sentiments, portfolio, and run <br>
+            the infrastructure of your choice
+        </h1>
+
+        <div class="flex justify-between">
+            
             <div>
                 <h1>Invest Smart</h1>
                 <p>
@@ -177,42 +192,14 @@
             </div>
 
 
-            <div>
-                <div>
-                    <img src="" alt="" srcset="">
-                    <div>
-                        <h1>Bitcoin<span>BTC</span></h1>
-                        <p>0.00080 BTC</p>
-                        <img src="" alt="" srcset="">
-
-                    </div>
-                </div>
-
-                <div>
-
-                    <div>
-                        <h2>
-                            Increase in <br>
-                            Trade
-                        </h2>
-                        <p>+75%</p>
-
-                        <p>sell option</p>
-                    </div>
-
-                    <div>
-                        <h1>$15.32</h1>
-                        <p>Price in dollar</p>
-                    </div>
-                </div>
-
-            </div>
+        
+            <img src="images/Chart.png" class="max-w-[40%]" alt="" srcset="">
         </div>
     </section>
 
-    <section>
-        <div>
-            <img src="images/detailed-statistics.png" alt="" srcset="">
+    <section class="bg-tetcol px-20 pb-20">
+        <div class="flex text-white justify-between">
+            <img src="images/detailed-statistics.png" class="max-w-[40%]" alt="" srcset="">
             <div>
                 <h1>
                     Detailed Statistics
@@ -227,6 +214,92 @@
                 <a href="#">Learn More</a>
             </div>
         </div>
+
+        <div class="flex justify-between text-white">
+            <div>
+                <h1>
+                    Grow your profit and track <br>
+                    your investments
+                </h1>
+    
+                <p>
+                    Use advanced analytical tools. Clear TradingView <br>
+                    charts let you track current and historical profit <br>
+                    investments.
+                </p>
+            </div>
+
+            <img src="/images/Table.png" class="max-w-[40%]" alt="" srcset="">
+        </div>
+    </section>
+
+    <section class="bg-primcol">
+        <div class="flex justify-center items-center text-white">
+            <div class="flex items-center justify-between bg-seccol rounded-xl">
+                
+                <div>
+                    <h1>Start mining now</h1>
+
+                    <p>Join now with CRAPPO to get the latest news <br>
+                        and start mining now
+                    </p>    
+                </div>
+
+                <input type="email" name="" id="" placeholder="Enter your email">
+
+                <a href="#">Subscribe</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primcol text-white px-20 flex flex-col">
+        <div class="flex items-start justify-between py-32">
+
+            <div class="flex items-center">
+                <img src="images/Logo.jpg" alt="Logo" srcset="">
+                <h1>CRAPPO</h1>
+            </div>
+    
+            <div>
+                <h3>Quick Link</h3>
+                <ul class="text-xs">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>Resources</h3>
+                <ul class="text-xs">
+                    <li><a href="#">Download Whitepaper</a></li>
+                    <li><a href="#">Smart Token</a></li>
+                    <li><a href="#">Blockchain Explorer</a></li>
+                    <li><a href="#">Crypto API</a></li>
+                    <li><a href="#">Interest</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h1>
+                    We accept following <br>
+                    payment systems
+                </h1>
+    
+                <div>
+                    <img src="" alt="" srcset="">
+                    <img src="" alt="" srcset="">
+                    <img src="" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p>©2021 CRAPPO. All rights reserved</p>
+        </div>
+        
     </section>
 </body>
 </html>
