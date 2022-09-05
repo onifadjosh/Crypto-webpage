@@ -766,6 +766,11 @@ video {
   border-bottom-width: 1px;
 }
 
+.bg-primcol {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 13 43 / var(--tw-bg-opacity));
+}
+
 .bg-faded-white {
   background-color: rgba(255, 255, 255, 0.05);
 }
@@ -773,11 +778,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-primcol {
-  --tw-bg-opacity: 1;
-  background-color: rgb(13 13 43 / var(--tw-bg-opacity));
 }
 
 .bg-seccol {
