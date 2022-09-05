@@ -681,6 +681,10 @@ video {
   flex-wrap: wrap;
 }
 
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -791,7 +795,7 @@ video {
 }
 
 .bg-hero {
-  background-image: url('/images/Illustration.jpg');
+  background-image: url('images/Illustration.jpg');
 }
 
 .bg-gradient-to-r {
