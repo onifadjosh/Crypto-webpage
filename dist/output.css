@@ -795,7 +795,7 @@ video {
 }
 
 .bg-hero {
-  background-image: url('/images/Illustration.jpg');
+  background-image: url('images/Illustration.jpg');
 }
 
 .bg-gradient-to-r {
@@ -826,8 +826,16 @@ video {
   --tw-gradient-to: #fff;
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .bg-center {
   background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-3 {

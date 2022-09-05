@@ -5,7 +5,7 @@ module.exports = {
     extend: {
 
       backgroundImage: {
-        'hero': "url('/images/Illustration.jpg')",
+        'hero': "url('images/Illustration.jpg')",
       },
 
       fontFamily: {
