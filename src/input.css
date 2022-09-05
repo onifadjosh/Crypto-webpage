@@ -32,7 +32,85 @@ html{
     --tw-rotate: 60deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     width: 4rem;
-    height: 23rem;
+    height: 22rem;
     right: 10%;
     top: 67%;
+}
+.image-extension3{
+    --tw-rotate: -45deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    width: 6rem;
+    height: 22rem;
+    left: 25%;
+    top: 30%;
+}
+.image-extension4{
+    --tw-rotate: -45deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    width: 6rem;
+    height: 22rem;
+    right: 30%;
+    top:20%;
+}
+.fa-chevron-right{
+    background: #ffffff;
+    color: #3671E9;
+    border-radius: 25px;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media screen and (max-width: 480px){
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 0px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: #1A2530;
+        height: 100vh;
+        width:100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 10;
+    }
+
+    .hamburger.active{
+        background-color: #1A2530;
+        z-index: 10;
+        position: fixed;
+        right: 0%;
+        top: 5%;
+    }
+    
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    
+    
+    .nav-item{
+        margin: 16px 0;
+    }
+    
+    .nav-menu.active{
+        left: 0;
+    }
+    
 }
