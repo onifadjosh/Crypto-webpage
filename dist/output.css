@@ -935,8 +935,16 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .pb-6 {
@@ -949,10 +957,6 @@ video {
 
 .pb-20 {
   padding-bottom: 5rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
 }
 
 .pb-8 {
@@ -1068,7 +1072,7 @@ html{
   padding: 10px 16px ;
   color: white;
   border-radius: 24px;
-  border: 1px solid white;
+  border: 1px solid #3671E9;
 }
 
 .primbutton:hover{
@@ -1126,6 +1130,10 @@ html{
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
   background-color: white;
+}
+
+.animate__animated.animate__rotateIn {
+  --animate-duration: 10s;
 }
 
 @media screen and (max-width: 480px){
@@ -1389,5 +1397,9 @@ html{
 
   .lg\:font-bold {
     font-weight: 700;
+  }
+
+  .lg\:leading-normal {
+    line-height: 1.5;
   }
 }

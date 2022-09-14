@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/54e86b48e4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="dist/output.css" rel="stylesheet">
     <title>CRAPPO - your crypto platform</title>
 </head>
@@ -40,23 +41,23 @@
 
         </nav>
 
-        <div class="flex justify-between  items-center h-3/4">
-            <div class="flex justify-center items-start flex-col h-full">
-                <div class="flex items-center gap-2 bg-faded-white text-xs lg:text-sm py-1 w-max rounded-2xl">
-                    <a class="bg-white rounded-xl text-xs lg:text-sm text-primcol px-3 py-1 font-semibold" href="#">75% save</a>
+        <div class="flex justify-between  items-center h-3/4 ">
+            <div class="flex justify-center items-start flex-col  h-full">
+                <div class="flex items-center gap-2 bg-faded-white text-xs lg:text-sm py-1 w-max rounded-2xl animate__animated animate__lightSpeedInLeft animate__slow ">
+                    <div class="bg-white rounded-xl text-xs lg:text-sm text-primcol px-3 py-1 font-semibold" href="#">75% save</div>
                     <p class="text-xs lg:text-sm pr-2">For the Black Friday weekend</p>
                 </div>
-                <h1 class="text-lg font-semibold lg:text-5xl lg:font-black py-5">
+                <h1 class="text-lg font-semibold lg:text-5xl lg:leading-normal lg:font-black py-5  animate__animated animate__lightSpeedInLeft animate__slow animate__delay-1s">
                     Fastest & secure <br>
                     platform to invest <br>
                     in crypto
                 </h1>
-                <p class="text-xs lg:textsm text-[#E0E0E0] py-4 mb-3">
+                <p class="text-xs lg:textsm text-[#E0E0E0] py-4 mb-3 animate__animated animate__lightSpeedInLeft animate__slow animate__delay-2s">
                     Buy and sell cryptocurrencies, trusted by 10M wallets <br>
                     with over $30 billion in transactions.
                 </p>
                 
-                <button class="primbutton">
+                <button class="primbutton animate__animated animate__lightSpeedInLeft animate__slow animate__delay-3s">
                     <a href="#" class=" text-xs lg:text-xs pr-2">Try for FREE</a>
                     <i class="fa-solid fa-chevron-right fa-xs p-3 hover:bg-seccol hover:text-white"></i>
                 </button>
@@ -65,7 +66,7 @@
             
 
             <div class="relative">
-                <img src="dist/images/Illustration1.png"  alt="" srcset="" class="hidden md:block">
+                <img src="dist/images/Illustration1.png"  alt="" srcset="" class="animate__animated animate__rotateIn animate__faster   hidden md:block">
                 <div class=" image-extension hidden lg:block bg-faded-white top-2/4 absolute z-30 "></div>
                 <div class=" image-extension2 hidden lg:block bg-faded-white top-2/4 absolute  "></div>
             </div>
@@ -76,8 +77,8 @@
         
     </header>
 
-    <section class="bg-primcol  text-white md:px-20 relative">
-        <div class="flex  flex-col md:flex-row justify-around">
+    <section class="bg-primcol  text-white md:px-20 relative ">
+        <div class="flex  flex-col md:flex-row justify-around animate__animated animate__fadeInBottomLeft ">
             <div class="flex items-center justify-start p-3">
 
                 <img src="dist/images/Icon1.png" class="max-w-[20%]" alt="" srcset="">
@@ -133,7 +134,7 @@
         </div>
 
         <div class="text-black bg-white md:w-1/2 flex justify-center  flex-col px-4 py-4 absolute top-[90%] md:left-[25%] mt-10 md:mt-5 rounded-xl shadow-lg shadow-gray-400 ">
-            <div class="flex justify-between items-center py-2">
+            <div class="flex justify-between items-center py-2 pb-4">
                 <input type="text" name="" id="" placeholder="Enter your hash rate" class="placeholder:text-xs placeholder:text-primcol placeholder:font-bold border-b w-1/3">
                 <select name="" placeholder="TH/s" class="text-xs text-primcol font-bold w-1/4 border-b">
                     <option value="">BTC</option>
@@ -142,13 +143,13 @@
                     <option value="">LTC</option>
                 </select>
 
-                <input type="button" value="Calculate" class="text-xs text-white bg-seccol px-5 py-3 rounded-3xl hover:bg-transparent hover:border hover:text-seccol ">
+                <input type="button" value="Calculate" class="text-xs text-white bg-seccol px-5 py-3 rounded-3xl hover:bg-transparent border hover:text-seccol ">
             </div>
 
             <div class="">
                 <h3 class="text-xs font-bold text-seccol pb-2">ESTIMATED 24 HOUR REVENUE</h3>
 
-                <h1 class="font-bold text-lg lg:text-2xl">
+                <h1 class="font-bold text-lg lg:text-2xl pb-3">
                     0.055 130 59 ETH <span class="text-seccol ">($1275)</span>
                 </h1>
 
