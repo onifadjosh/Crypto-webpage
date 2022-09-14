@@ -6,6 +6,12 @@ html{
     font-family: 'Rubik', sans-serif;
 }
 
+.coin:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    z-index: 2;
+}
+
 .primbutton{
     background-color: #3671E9;
     padding: 10px 16px ;
